@@ -40,7 +40,6 @@ footer {
 .footerLink {
     margin-top: 20px;
     span {
-        
         position: relative;
         transition: 225ms ease-in-out;
         cursor: pointer;
@@ -116,24 +115,11 @@ footer {
     z-index: 3;
     position: fixed;
     top: 0px;
-    text-align: center;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-    color: white;
+    width: 100%;
     background-color: #141d2f;
     height: 100vh;
-    cursor: default;
-    transition: 225ms ease-in-out;
-
-    a {
-        text-decoration: none;
-        color: #e86f00;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
+    overflow-x: hidden;
+    overflow-y: auto;
     button {
         position: sticky;
         left: 97%;
@@ -150,4 +136,29 @@ footer {
             opacity: 0.8;
         }
     }
+}
+
+.policyInnerStyle {
+    max-width: 1100px;
+    width: 90%;
+    text-align: center;
+    transition: 225ms ease-in-out;
+    cursor: default;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    a {
+        text-decoration: none;
+        color: #e86f00;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.policyInnerPosition {
+    display: flex;
+    justify-content: center;
 }
