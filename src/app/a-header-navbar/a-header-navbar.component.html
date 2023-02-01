@@ -1,23 +1,40 @@
 <div class="navbar">
     <div class="navbarContent" id="navbarHide">
         <!-- ########## DESKTOP NAVBAR ########## -->
-        <a href="#home" class="navbarLogoMain">
-            <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle" onClick="location.reload()"
-                alt="own made Logo">
-        </a>
+        <div class="navbarLogoSection">
+            <a href="#home" class="navbarLogoMain">
+                <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle"
+                    onClick="location.reload()" alt="own made Logo">
+            </a>
+            <div class="hideMobile">
+                <img class="languagebtn" (click)="openAndCloseLanguage()" src="assets/img/languagebtn.png"
+                    alt="language Icon">
+            </div>
+            <div class="hideMobile">
+                <div id="transBtnPosition1" id="languagebtn" class="d-none">
+                    <div id="transBtnPosition2">
+                        <img id="transEn" (click)="clickLanguageEN()" src="assets/img/flagengland.png"
+                            alt="Flag England">
+                        <img id="transDe" (click)="clickLanguageDE()" src="assets/img/flaggermany.png"
+                            alt="Flag Germany">
+                        <img id="transTr" (click)="clickLanguageTR()" src="assets/img/flagturkey.png" alt="Flag Turkey">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="navbarLinks hideMobile">
             <a href="#aboutme">
-                <span>
+                <span id="trans1">
                     About me
                 </span>
             </a>
             <a href="#skills">
-                <span>
+                <span id="trans2">
                     Skills
                 </span>
             </a>
             <a href="#projects">
-                <span>
+                <span id="trans3">
                     Portfolio
                 </span>
             </a>
@@ -27,18 +44,29 @@
             <img (click)="openAndCloseNavbar()" src="assets/img/mobilemenu.png" alt="mobile navbar menü">
         </div>
         <div id="mobileNavbarContent" class="d-none hideDesktop">
-            <a (click)="openAndCloseNavbar()" href="#aboutme">
-                About me
-            </a><br>
-            <a (click)="openAndCloseNavbar()" href="#skills">
-                Skills
-            </a><br>
-            <a (click)="openAndCloseNavbar()" href="#projects">
-                Portfolio
-            </a><br>
-            <a (click)="openAndCloseNavbar()" href="#contact">
-                Contact
-            </a>
+            <div class="mobileNavbarInnerPosition">
+                <a id="trans30" (click)="openAndCloseNavbar()" href="#aboutme">
+                    About me
+                </a><br>
+                <a id="trans31" (click)="openAndCloseNavbar()" href="#skills">
+                    Skills
+                </a><br>
+                <a id="trans32" (click)="openAndCloseNavbar()" href="#projects">
+                    Portfolio
+                </a><br>
+                <a id="trans33" (click)="openAndCloseNavbar()" href="#contact">
+                    Contact
+                </a>
+                <div id="transBtnPosition1">
+                    <div id="transBtnPosition2">
+                        <img id="transEn" (click)="clickLanguageEN()" src="assets/img/flagengland.png"
+                            alt="Flag England">
+                        <img id="transDe" (click)="clickLanguageDE()" src="assets/img/flaggermany.png"
+                            alt="Flag Germany">
+                        <img id="transTr" (click)="clickLanguageTR()" src="assets/img/flagturkey.png" alt="Flag Turkey">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

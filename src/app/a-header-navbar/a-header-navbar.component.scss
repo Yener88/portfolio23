@@ -23,6 +23,7 @@
     @media (max-width: 1100px) { 
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
+        height: 14vh;
     }
 }
 
@@ -105,15 +106,19 @@
     top: 0px;
     text-align: center;
     width: 100vw;
-    height: 90vh;
+    height: 86vh;
     overflow: hidden;
     background-color: grey;
-    margin-top: 10vh;
+    margin-top: 14vh;
+
     a {
         color: white;
         text-decoration: none;
-        font-size: 23px;
-        margin-top: 40px;
+        font-size: 36px;
+        
+    }
+    span {
+        
     }
 }
 
@@ -173,4 +178,104 @@
     to {
         transform: translateX(100%);
     }
+}
+
+.mobileNavbarInnerPosition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#transBtnPosition1 {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    color: #e86f00;
+    @media (max-width: 1130px) {
+        position: unset;
+        left: -55px;
+        bottom: 200px;
+        padding-top: 50px;
+    }
+}
+
+#transBtnPosition2 {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    padding-bottom: 18px;
+    @media (max-width: 1130px) {
+        border-top: 4px solid #141d2f;
+    }
+}
+
+#transDe,
+#transEn,
+#transTr {
+    width: 35px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-right: 5px;
+    &:hover {
+        opacity: 0.4;
+    }
+    @media (max-width: 1130px) {
+        width: 60px;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.slideLanguageOpen {
+    animation: slideLanguageOpen 0.8s ease-out;
+    scroll-behavior: smooth;
+}
+
+@keyframes slideLanguageOpen {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slideLanguageClose {
+    animation: slideLanguageClose 0.8s ease-out;
+    scroll-behavior: smooth;
+}
+
+@keyframes slideLanguageClose {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-200%);
+    }
+}
+
+.languagebtn {
+    padding-left: 30px;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: 225ms ease-in-out;
+    &:hover {
+        opacity: 0.8;
+        transition: 225ms ease-in-out;
+    }
+}
+
+.navbarLogoSection {
+    display: flex;
+    align-items: center;
+}
+
+.germanstyle1 {
+    font-size: 62px;
 }
