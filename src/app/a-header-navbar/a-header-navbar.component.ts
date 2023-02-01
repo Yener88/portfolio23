@@ -111,7 +111,12 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans1', `Über mich`);
     this.getElById('trans2', `Portfolio`);
     this.getElById('trans3', `Skills`);
-    this.getElById('trans4-1', `Ich bin`);
+    const germanStyle1 = document.getElementById('trans4-1');
+    if (germanStyle1) {
+      germanStyle1.innerHTML = `Ich bin`;
+      germanStyle1.style.setProperty('font-size', '60px');
+      document.documentElement.style.setProperty('overflow-y', 'auto');
+    }
     this.getElById('trans4-2', `FRONTEND ENTWICKLER`);
     this.getElById('trans5', `Schreib mir!`);
     this.getElById('trans6', `Scroll runter`);
@@ -164,7 +169,12 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans1', `About me`);
     this.getElById('trans2', `Portfolio`);
     this.getElById('trans3', `Skills`);
-    this.getElById('trans4-1', `I am`);
+    const englishStyle1 = document.getElementById('trans4-1');
+    if (englishStyle1) {
+      englishStyle1.innerHTML = `I am`;
+      englishStyle1.style.setProperty('font-size', '90px');
+      document.documentElement.style.setProperty('overflow-y', 'auto');
+    }
     this.getElById('trans4-2', `FRONTEND DEVELOPER`);
     this.getElById('trans5', `Let's talk!`);
     this.getElById('trans6', `Scroll down`);
@@ -218,7 +228,12 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans1', `Hakkimda`);
     this.getElById('trans2', `Portföy`);
     this.getElById('trans3', `Beceriler`);
-    this.getElById('trans4-1', `ben`);
+    const turkishStyle1 = document.getElementById('trans4-1');
+    if (turkishStyle1) {
+      turkishStyle1.innerHTML = `ben`;
+      turkishStyle1.style.setProperty('font-size', '90px');
+      document.documentElement.style.setProperty('overflow-y', 'auto');
+    }
     this.getElById('trans4-2', `FRONTEND DEVELOPER`);
     this.getElById('trans5', `Konuşalım!`);
     this.getElById('trans6', `Aşağı kaydır`);
