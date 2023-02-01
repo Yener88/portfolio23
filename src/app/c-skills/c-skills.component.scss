@@ -1,0 +1,120 @@
+.skills {
+    height: 760px;
+    background-color: #141d2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillsContent {
+    z-index: 1;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skillsContentLeft {
+    width: 58%;
+}
+
+.skillsIconSection1,
+.skillsIconSection2,
+.skillsIconSection3,
+.skillsIconSection4 {
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    padding-top: 80px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        padding-right: 60px;
+    }
+
+    img {
+        width: 60px;
+        height: 65px;
+        object-fit: contain;
+    }
+    span {
+        padding-top: 8px;
+    }
+}
+
+.skillsContentRight {
+    width: 42%;
+}
+
+.skillsBorderTitle {
+    position: absolute;
+    top: 1815px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsBorderTitleContent1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.skillsBorderTitleContainer {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 2px solid #d61ce6;
+    width: 290px;
+    height: 0;
+}
+
+.skillsBorderTitleTitle {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 108px;
+    padding-right: 40px;
+}
+
+.skillsBorderTitleContent2 {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skillsBorderTitleText {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.skillsBorderTitleBtn {
+    text-decoration: none;
+    color: white;
+    background: #e86f00;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    margin-top: 50px;
+    transition: 225ms ease-in-out;
+    &:hover {
+        opacity: 0.8;
+        transition: 225ms ease-in-out;
+    }
+}

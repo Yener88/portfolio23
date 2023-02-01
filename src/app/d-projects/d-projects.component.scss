@@ -1,0 +1,213 @@
+.projects {
+    height: 1530px;
+    background-color: #27395c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 1100px) {
+        height: 2560px;
+    }
+}
+
+.projectsContent {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectsBorderTitleContent {
+    position: absolute;
+    top: 2420px;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.projectsBorderTitleTextPosition {
+    margin-left: 50px;
+}
+
+.projectsBorderTitleBorderContainer {
+    width: 100px;
+    height: 0px;
+    border: 2px solid #ff4747;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.projectsBorderTitleTitle {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.projectsBorderTitleText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.projectsContentprojects {
+    margin-top: 300px;
+    height: 100%;
+}
+
+.projectsContentprojectsRow1 {
+    display: flex;
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }
+}
+
+.projectsContentprojectsRow2 {
+    display: flex;
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }
+}
+
+.projectsContentprojectsContainer {
+    margin: 15px;
+    width: 520px;
+    height: 520px;
+    border-radius: 5px;
+    border: 1px solid #e86f00;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectsContentprojectsContainerOuttaImgHover {
+    z-index: 1;
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 225ms ease-in-out;
+    &:hover {
+        opacity: 0;
+        transform: scale(1.1);
+        transition: 225ms ease-in-out;
+    }
+}
+
+.imgbg1 {
+    background-image: url("../../assets/img/screeninnerpokemon.jpg");
+    background-size: cover;
+    background-size: 100% 46%;
+    background-position: top;
+}
+
+.imgbg2 {
+    background-image: url("../../assets/img/screeninnerelpolloloco.jpg");
+    background-size: cover;
+    background-size: 100% 46%;
+    background-position: top;
+}
+
+.imgbg3 {
+    background-image: url("../../assets/img/screeninnerkanban.jpg");
+    background-size: cover;
+    background-size: 100% 46%;
+    background-position: top;
+}
+
+.imgbg4 {
+    background-image: url("../../assets/img/screeninnerringoffire.jpg");
+    background-size: cover;
+    background-size: 100% 46%;
+    background-position: top;
+}
+
+.projectsContentprojectsBtnPosition {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectsContentprojectsBtn1 {
+    z-index: 2;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #e86f00;
+    border-right: 1px solid #e86f00;
+    background: rgba(232, 112, 0, 0.2823529412);
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    padding: 10px 25px;
+    border-bottom-right-radius: 5px;
+    transition: 225ms ease-in-out;
+    opacity: 0.6;
+    &:hover {
+        opacity: 1;
+        transition: 225ms ease-in-out;
+    }
+}
+
+.projectsContentprojectsBtn2 {
+    z-index: 2;
+    text-decoration: none;
+    color: white;
+    background: #e86f00;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    padding: 10px 25px;
+    border-bottom-left-radius: 5px;
+    transition: 225ms ease-in-out;
+    opacity: 0.6;
+    &:hover {
+        opacity: 1;
+        transition: 225ms ease-in-out;
+    }
+}
+
+.projectsContentprojectsDescrip {
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsContentprojectsDescripTitle {
+    color: #ff4747;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.projectsContentprojectsDescripText {
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.projectsContentprojectsDescripCode {
+    color: #fa7902;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+}

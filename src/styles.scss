@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+    margin: 0;
+    font-family: "Poppins";
+    font-style: normal;
+    overflow-x: hidden;
+    color: white;
+    scroll-behavior: smooth;
+    transition: 225ms ease-in-out;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #141d2f;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #3c5791;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #3c5791;
+}

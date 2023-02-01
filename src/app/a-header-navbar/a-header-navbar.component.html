@@ -1,0 +1,46 @@
+<div class="navbar">
+    <div class="navbarContent" id="navbarHide">
+        <!-- ########## DESKTOP NAVBAR ########## -->
+        <a href="#home" class="navbarLogoMain">
+            <img src="assets/img/logowhite.png" class="imgClickBlock" id="clickLogoStyle" onClick="location.reload()"
+                alt="own made Logo">
+        </a>
+        <div class="navbarLinks hideMobile">
+            <a href="#aboutme">
+                <span>
+                    About me
+                </span>
+            </a>
+            <a href="#skills">
+                <span>
+                    Skills
+                </span>
+            </a>
+            <a href="#projects">
+                <span>
+                    Portfolio
+                </span>
+            </a>
+        </div>
+        <!-- ########## MOBILE NAVBAR ########## -->
+        <div class="mobileNavbar hideDesktop">
+            <img (click)="openAndCloseNavbar()" src="assets/img/mobilemenu.png" alt="mobile navbar menü">
+        </div>
+        <div id="mobileNavbarContent" class="d-none hideDesktop">
+            <a (click)="openAndCloseNavbar()" href="#aboutme">
+                About me
+            </a><br>
+            <a (click)="openAndCloseNavbar()" href="#skills">
+                Skills
+            </a><br>
+            <a (click)="openAndCloseNavbar()" href="#projects">
+                Portfolio
+            </a><br>
+            <a (click)="openAndCloseNavbar()" href="#contact">
+                Contact
+            </a>
+        </div>
+    </div>
+
+
+</div>

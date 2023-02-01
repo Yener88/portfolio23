@@ -1,0 +1,105 @@
+#aboutme {
+    background-color: #293a5e;
+    height: 675px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutmeContent {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.aboutmeContentLeft {
+    width: 43%;
+}
+
+.aboutmeContentRight {
+    width: 43%;
+    img {
+        width: 600px;
+        height: auto;
+        margin-top: 60px;
+    }
+}
+
+.aboutmeText1 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.aboutmeText2 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.aboutmeText3 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    span {
+        width: 80%;
+    }
+    div {
+        width: 20%;
+    }
+    img {
+        width: 34.47px;
+        height: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.aboutmeText4 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    span {
+        width: 80%;
+    }
+    div {
+        width: 20%;
+    }
+    img {
+        width: 45px;
+        height: 45px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.aboutMeBottomLine {
+    z-index: 0;
+
+    img {
+        position: absolute;
+        top: 1320px;
+        left: 0px;
+        width: 100vw;
+        @media (max-width: 1600px) {
+            top: 1355px;
+        }
+        @media (max-width: 1400px) {
+            top: 1380px;
+        }
+        @media (max-width: 1200px) {
+            top: 1400px;
+        }
+    }
+
+}
