@@ -115,6 +115,7 @@ header {
 // ################ BORDER WITH LINKS ###################
 
 .headerBorderLinks {
+    z-index: 2;
     position: absolute;
     bottom: 100px;
     left: 0;
