@@ -105,7 +105,7 @@ export class AHeaderNavbarComponent implements OnInit {
     if (element) {
       element.innerHTML = `${text}`;
     }
-    document.documentElement.style.setProperty('overflow-y', 'auto');
+    
   }
   // ''''''''''''''''TRANSLATE FUNCTION''''''''''''''''
   clickLanguageDE() {
@@ -117,7 +117,6 @@ export class AHeaderNavbarComponent implements OnInit {
     // if (germanStyle1) {
     //   germanStyle1.innerHTML = `Ich bin`;
     //   germanStyle1.style.setProperty('font-size', '60px');
-    //   document.documentElement.style.setProperty('overflow-y', 'auto');
     // }
     this.getElById('trans4-2', `FRONTEND ENTWICKLER`);
     this.getElById('trans5', `Schreib mir!`);
@@ -165,6 +164,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans32', `Portfolio`);
     this.getElById('trans33', `Kontakt`);
     this.openAndCloseNavbar();
+    document.documentElement.style.setProperty('overflow-y', 'auto');
   }
 
   clickLanguageEN() {
@@ -176,7 +176,6 @@ export class AHeaderNavbarComponent implements OnInit {
     // if (englishStyle1) {
     //   englishStyle1.innerHTML = `I am`;
     //   englishStyle1.style.setProperty('font-size', '90px');
-    //   document.documentElement.style.setProperty('overflow-y', 'auto');
     // }
     this.getElById('trans4-2', `FRONTEND DEVELOPER`);
     this.getElById('trans5', `Let's talk!`);
@@ -225,6 +224,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans32', `Portfolio`);
     this.getElById('trans33', `Contact`);
     this.openAndCloseNavbar();
+    document.documentElement.style.setProperty('overflow-y', 'auto');
   }
 
   clickLanguageTR() {
@@ -236,7 +236,6 @@ export class AHeaderNavbarComponent implements OnInit {
     // if (turkishStyle1) {
     //   turkishStyle1.innerHTML = `ben`;
     //   turkishStyle1.style.setProperty('font-size', '90px');
-    //   document.documentElement.style.setProperty('overflow-y', 'auto');
     // }
     this.getElById('trans4-2', `FRONTEND DEVELOPER`);
     this.getElById('trans5', `Konuşalım!`);
@@ -284,6 +283,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans32', `Portföy`);
     this.getElById('trans33', `İletişim`);
     this.openAndCloseNavbar();
+    document.documentElement.style.setProperty('overflow-y', 'auto');
   }
 
 }
