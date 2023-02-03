@@ -46,6 +46,7 @@ header {
     margin-top: 97px;
     margin-right: -10px;
     margin-left: -66px;
+    cursor: default;
     @media (max-width: 1100px) {
         font-size: 26px;
         height: 41px;
@@ -61,6 +62,7 @@ header {
     font-weight: 700;
     height: 141px;
     text-align: start;
+    cursor: default;
     @media (max-width: 1100px) {
         font-size: 45px;
         height: 27px;
@@ -75,6 +77,7 @@ header {
     font-weight: 400;
     color: #ff4747;
     text-align: start;
+    cursor: default;
     @media (max-width: 1100px) {
         font-size: 26px;
     }
