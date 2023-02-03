@@ -185,7 +185,11 @@
     }
     @media (max-width: 360px) {
         max-width: 270px;
-        bottom: -3765px;
+        bottom: -3655px;
+    }
+        @media (max-width: 300px) {
+        max-width: 270px;
+        bottom: -3725px;
     }
 }
 
@@ -245,5 +249,9 @@
     }
     @media (max-width: 1100px) {
         bottom: -4190px;
+    }
+    @media (max-width: 300px) {
+        bottom: -4285px;
+        right: 5px;
     }
 }
