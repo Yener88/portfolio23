@@ -186,6 +186,9 @@
         opacity: 1;
         transition: 225ms ease-in-out;
     }
+    @media (max-width: 1100px) {
+        opacity: 1;
+    }
 }
 
 .projectsContentprojectsBtn2 {
@@ -208,6 +211,9 @@
     &:hover {
         opacity: 1;
         transition: 225ms ease-in-out;
+    }
+    @media (max-width: 1100px) {
+        opacity: 1;
     }
 }
 
