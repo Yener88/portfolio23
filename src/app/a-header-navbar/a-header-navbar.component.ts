@@ -105,6 +105,7 @@ export class AHeaderNavbarComponent implements OnInit {
     if (element) {
       element.innerHTML = `${text}`;
     }
+    document.documentElement.style.setProperty('overflow-y', 'auto');
   }
   // ''''''''''''''''TRANSLATE FUNCTION''''''''''''''''
   clickLanguageDE() {
