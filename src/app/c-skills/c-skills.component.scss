@@ -46,7 +46,7 @@
         cursor: grabbing;
         transition: all 1s ease-in-out;
         &:hover {
-            transform: scale(1.05) translate(3%, 3%);
+            transform: scale(1.05) translate(3%, 3%) rotate(-5deg);
             transition: all 225ms ease-in-out;
             background: radial-gradient(closest-side, #ff47477e, #ff47477e, #141d2f);
             border-radius: 100%;
@@ -167,8 +167,12 @@
     margin-top: 50px;
     transition: 225ms ease-in-out;
     &:hover {
-        opacity: 0.8;
+        background: #ff4747;
         transition: 225ms ease-in-out;
+    }
+    &:active {
+        background: white;
+        color: #141d2f;
     }
     @media (max-width: 1100px) {
         padding: 10px 20px;
