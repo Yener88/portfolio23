@@ -40,7 +40,7 @@
         &:hover {
             transform: rotate(380deg);
             transition: transform 0.5s ease-in-out;
-            box-shadow: 0px 0px 10px 5px #fa275881;
+            box-shadow: 0px 0px 10px 5px #e86f00;
             border-radius: 100%;
         }
         @media (max-width: 1100px) {
@@ -84,7 +84,7 @@
             transition: 225ms ease-in-out;
             &:hover {
                 transition: 225ms ease-in-out;
-                color: #fa2759;
+                color: #e86f00;
             }
         }
     }
@@ -264,13 +264,14 @@
 }
 
 .languagebtn {
-    padding-left: 30px;
+    margin-left: 30px;
     width: 40px;
     height: auto;
     cursor: pointer;
+    border-radius: 100%;
     transition: 225ms ease-in-out;
     &:hover {
-        opacity: 0.8;
+        box-shadow: 0px 0px 10px 5px #e86f00;
         transition: 225ms ease-in-out;
     }
 }

@@ -57,14 +57,6 @@
         &::placeholder {
             color: white;
         }
-        &::selection {
-            color: white;
-            background-color: #141d2f;
-        }
-        &::-moz-selection {
-            color: white;
-            background-color: #141d2f;
-        }
         @media (max-width: 1100px) {
             width: 94%;
         }
@@ -231,8 +223,9 @@
     a {
         cursor: pointer !important;
         transition: 225ms ease-in-out;
+
         &:hover {
-            opacity: 0.8;
+            color: #e86f00 !important;
             transition: 225ms ease-in-out;
         }
     }
@@ -258,7 +251,7 @@
         }
     }
     &:hover {
-        background-color: rgba(255, 255, 255, 0.26);
+        background-color: #e86f00;
     }
     @media (max-width: 1100px) {
         bottom: -4190px;

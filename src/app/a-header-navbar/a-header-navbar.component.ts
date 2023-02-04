@@ -110,8 +110,8 @@ export class AHeaderNavbarComponent implements OnInit {
   // ''''''''''''''''TRANSLATE FUNCTION''''''''''''''''
   clickLanguageDE() {
     this.getElById('trans1', `Über mich`);
-    this.getElById('trans2', `Portfolio`);
-    this.getElById('trans3', `Skills`);
+    this.getElById('trans3', `Portfolio`);
+    this.getElById('trans2', `Skills`);
     this.getElById('trans4-1', `Ich bin`);
     // const germanStyle1 = document.getElementById('trans4-1');
     // if (germanStyle1) {
@@ -141,7 +141,9 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans24', `Willst du ein Problem lösen?`);
     this.getElById('trans25', `Kontaktieren Sie mich über dieses Formular, ich bin an Ihren Ideen interessiert und möchte Ihnen mit meiner Arbeit zu Ihren Projekten beitragen.
     <br><br>
-    Brauchen Sie einen Frontend-Entwickler? <a href="mailto:yener.bas@outlook.de" style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;">Kontaktieren Sie mich!</a>`);
+    Brauchen Sie einen Frontend-Entwickler? <a href="mailto:yener.bas@outlook.de"         style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;" 
+    onpointerenter="this.setAttribute('style', 'color: blue; color: #e86f00; text-decoration: none; font-weight: bold;')" 
+    onpointerleave="this.setAttribute('style', 'color: red; color: white; text-decoration: none; font-weight: bold;')">Kontaktieren Sie mich!</a>`);
     const placeholderName = document.getElementById('name');
     if (placeholderName) {
       placeholderName.setAttribute('placeholder', 'Dein Name');
@@ -169,8 +171,8 @@ export class AHeaderNavbarComponent implements OnInit {
 
   clickLanguageEN() {
     this.getElById('trans1', `About me`);
-    this.getElById('trans2', `Portfolio`);
-    this.getElById('trans3', `Skills`);
+    this.getElById('trans3', `Portfolio`);
+    this.getElById('trans2', `Skills`);
     this.getElById('trans4-1', `I am`);
     // const englishStyle1 = document.getElementById('trans4-1');
     // if (englishStyle1) {
@@ -201,7 +203,10 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans24', `Got a problem to solve?`);
     this.getElById('trans25', `Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.
         <br><br>
-        Need a Frontend developer?<a href="mailto:yener.bas@outlook.de" style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;">Contact me!</a>`);
+        Need a Frontend developer? <a href="mailto:yener.bas@outlook.de" 
+        style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;" 
+        onpointerenter="this.setAttribute('style', 'color: blue; color: #e86f00; text-decoration: none; font-weight: bold;')" 
+        onpointerleave="this.setAttribute('style', 'color: red; color: white; text-decoration: none; font-weight: bold;')">Contact me!</a>`);
     const placeholderName = document.getElementById('name');
     if (placeholderName) {
       placeholderName.setAttribute('placeholder', 'Your name');
@@ -229,8 +234,8 @@ export class AHeaderNavbarComponent implements OnInit {
 
   clickLanguageTR() {
     this.getElById('trans1', `Hakkimda`);
-    this.getElById('trans2', `Portföy`);
-    this.getElById('trans3', `Beceriler`);
+    this.getElById('trans3', `Portföy`);
+    this.getElById('trans2', `Beceriler`);
     this.getElById('trans4-1', `ben`);
     // const turkishStyle1 = document.getElementById('trans4-1');
     // if (turkishStyle1) {
@@ -260,7 +265,10 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans24', `Çözülecek bir sorunun var mı?`);
     this.getElById('trans25', `Bu form aracılığıyla bana ulaşın, fikirlerinizi duymak, bilmek ve projelerinize çalışmam ile katkıda bulunmak ilgileniyorum.
         <br><br>
-        Bir frontend geliştiricisi mi lazım? <a href="mailto:yener.bas@outlook.de" style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;">Benimle iletişime geçin!</a>`);
+        Bir frontend geliştiricisi mi lazım? <a href="mailto:yener.bas@outlook.de" 
+        style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;" 
+        onpointerenter="this.setAttribute('style', 'color: blue; color: #e86f00; text-decoration: none; font-weight: bold;')" 
+        onpointerleave="this.setAttribute('style', 'color: red; color: white; text-decoration: none; font-weight: bold;')">Benimle iletişime geçin!</a>`);
     const placeholderName = document.getElementById('name');
     if (placeholderName) {
       placeholderName.setAttribute('placeholder', 'Adınız');

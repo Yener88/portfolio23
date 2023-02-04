@@ -46,9 +46,9 @@
         cursor: grabbing;
         transition: all 1s ease-in-out;
         &:hover {
-            transform: scale(1.1) translate(-10%, -10%);
+            transform: scale(1.05) translate(3%, 3%);
             transition: all 225ms ease-in-out;
-            background: radial-gradient(closest-side, #d51ce691, #d51ce6ab, #141d2f);
+            background: radial-gradient(closest-side, #ff47477e, #ff47477e, #141d2f);
             border-radius: 100%;
         }
         @media (max-width: 1100px) {
