@@ -35,7 +35,6 @@
     line-height: 120%;
     text-align: center;
     padding-top: 80px;
-
     div {
         display: flex;
         flex-direction: column;
@@ -47,7 +46,6 @@
         cursor: grabbing;
         transition: all 0.5s ease-in-out;
         border-radius: 10%;
-
         &:hover {
             transform: scale(1.02) translate(2%, 2%);
             transition: all 0.5s ease-in-out;
@@ -60,9 +58,8 @@
             filter: invert(30%);
             box-shadow: 2px 2px 5px 5px #00e80c8c;
             background-color: #00e80c8c;
-          
         }
-        @media (max-width: 1100px) {    
+        @media (max-width: 1100px) {
             width: 80px;
             margin-right: 0px;
         }
