@@ -123,8 +123,8 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans6', `Scroll runter`);
     this.getElById('trans7', `Über mich`);
     this.getElById('trans8', `Hallo, ich bin ein Frontend-Entwickler aus Köln, Deutschland. Nach der Schule habe ich eine Ausbildung im IT-Bereich absolviert und insgesamt etwa 8 Jahre Berufserfahrung gesammelt. Um meine Leidenschaft zum Beruf zu machen, habe ich im August 2022 den Intensivkurs an der Developer Academy absolviert.`);
-    this.getElById('trans9', `Als ich noch in der Schule war, hatte ich meine ersten Erfahrungen gemacht und war bereits sehr an verschiedenen Arten von Software und Hardware von Elektronikgeräten interessiert.`);
-    this.getElById('trans10', `Mit 15 Jahren programmierte ich meine erste Homepage, die wie ein soziales Medienprofil über mich aufgebaut war, basierend auf HTML/CSS.`);
+    this.getElById('trans9', `Zur Schulzeit habe ich meine ersten Erfahrungen gemacht und war bereits an verschiedenen Arten von Soft- und Hardware interessiert.`);
+    this.getElById('trans10', `Mit 15 Jahren programmierte ich meine erste Homepage basierend auf HTML/CSS, die wie ein soziales Medienprofil aufgebaut war.`);
     this.getElById('trans11-1', `Skills`);
     this.getElById('trans11', `Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.`);
     this.getElById('trans12', `In Kontakt treten`);
@@ -139,7 +139,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans22', `Live-Test`);
     this.getElById('trans23', `Portfolio`);
     this.getElById('trans24', `Willst du ein Problem lösen?`);
-    this.getElById('trans25', `Kontaktieren Sie mich über dieses Formular, ich bin an Ihren Ideen interessiert und möchte Ihnen mit meiner Arbeit zu Ihren Projekten beitragen.
+    this.getElById('trans25', `Kontaktieren Sie mich über dieses Formular, ich möchte Ihnen mit meiner Arbeit, zu Ihren Projekten beitragen.
     <br><br>
     Brauchen Sie einen Frontend-Entwickler? <a href="mailto:yener.bas@outlook.de"         style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;" 
     onpointerenter="this.setAttribute('style', 'color: blue; color: #e86f00; text-decoration: none; font-weight: bold;')" 
