@@ -128,11 +128,11 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans11-1', `Skills`);
     this.getElById('trans11', `Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.`);
     this.getElById('trans12', `In Kontakt treten`);
-    this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Scrollen Sie nach unten, um andere von mir entwickelte Projekte anzusehen.`);
-    this.getElById('trans14', `Das Index der Pokemon, das auf API basierte Pokedex! Mit umfangreichen Details und erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
-    this.getElById('trans16', `El Pollo Loco ist ein humorvolles Jump-and-Run-Spiel, das mit objektorientiertem JavaScript erstellt wurde und als Einführung in die Angular-Entwicklung dient.`);
+    this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Scrollen Sie nach unten um meine Projekte anzusehen.`);
+    this.getElById('trans14', `Das Index der Pokemon! Das auf API basierte Pokedex, mit erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
+    this.getElById('trans16', `El Pollo Loco ist ein humorvolles Jump-and-Run-Spiel, das mit objektorientiertem JavaScript erstellt wurde.`);
     this.getElById('trans17', `Team Table ist ein Tool, mit dem Sie Ihre Arbeit organisieren und effizienter gestalten können, ähnlich einem Kanban-Board.`);
-    this.getElById('trans18', `Das beliebte Kartenspiel, das in einem Online-Desktop-Format verfügbar ist und es mehreren Benutzern ermöglicht, gleichzeitig auf verschiedenen Geräten zu spielen.`);
+    this.getElById('trans18', `Das beliebte Kartenspiel in einem Online-Desktop-Format, welches mehreren Benutzern ermöglicht, gleichzeitig auf verschiedenen Geräten zu spielen.`);
     this.getElById('trans19', `Live-Test`);
     this.getElById('trans20', `Live-Test`);
     this.getElById('trans21', `Live-Test`);
