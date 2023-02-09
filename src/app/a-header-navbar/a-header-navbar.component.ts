@@ -10,13 +10,11 @@ export class AHeaderNavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
     // beim runter Scrollen fährt die navbar ein und komm wieder beim hochscrollen 
     const navbar = document.getElementById("navbarHide");
     if (navbar) {
       var lastScroll = 0;
       const navbarHeight = window.getComputedStyle(navbar, null).getPropertyValue("height");
-
       window.onscroll = function () {
         const currentScroll = window.pageYOffset;
         if (currentScroll > lastScroll) {
@@ -29,6 +27,7 @@ export class AHeaderNavbarComponent implements OnInit {
         lastScroll = currentScroll;
       };
     }
+
     // Klick öffnet navbar       clickNavbarIgnore MUSS NOCH VERGEBEN WERDEN
     document.body.addEventListener("click", function (event) {
       let target = event.target as HTMLElement;
@@ -41,9 +40,6 @@ export class AHeaderNavbarComponent implements OnInit {
         navbar.style.boxShadow = ('0px 4px 4px rgba(0, 0, 0, 0.25)');
       }
     });
-
-
-
   }
 
   // MOBILE NAVBAR OPEN AND CLOSE FUNKTION
@@ -79,16 +75,13 @@ export class AHeaderNavbarComponent implements OnInit {
       if (languageMenu.classList.contains('d-none')) {
         languageMenu.classList.add('slideLanguageOpen');
         languageMenu.classList.remove('d-none');
-
         const animationEnd = function () {
           languageMenu.classList.remove('slideLanguageOpen');
           languageMenu.removeEventListener('animationend', animationEnd);
         };
         languageMenu.addEventListener('animationend', animationEnd);
-
       } else {
         languageMenu.classList.add('slideLanguageClose');
-
         const animationEnd = function () {
           languageMenu.classList.remove('slideLanguageClose');
           languageMenu.classList.add('d-none');
@@ -99,39 +92,34 @@ export class AHeaderNavbarComponent implements OnInit {
     }
   }
 
-
   getElById(id: any, text: any) {  // this.getElById('trans',``);
     const element = document.getElementById(id);
     if (element) {
       element.innerHTML = `${text}`;
     }
-    
   }
-  // ''''''''''''''''TRANSLATE FUNCTION''''''''''''''''
+
+  // ################# TRANSLATE FUNCTION #################
+
   clickLanguageDE() {
     this.getElById('trans1', `Über mich`);
     this.getElById('trans3', `Portfolio`);
     this.getElById('trans2', `Skills`);
     this.getElById('trans4-1', `Ich bin`);
-    // const germanStyle1 = document.getElementById('trans4-1');
-    // if (germanStyle1) {
-    //   germanStyle1.innerHTML = `Ich bin`;
-    //   germanStyle1.style.setProperty('font-size', '60px');
-    // }
     this.getElById('trans4-2', `FRONTEND ENTWICKLER`);
     this.getElById('trans5', `Schreib mir!`);
     this.getElById('trans6', `Scroll runter`);
     this.getElById('trans7', `Über mich`);
-    this.getElById('trans8', `Hallo, ich bin ein Frontend-Entwickler aus Köln, Deutschland. Nach der Schule habe ich eine Ausbildung im IT-Bereich absolviert und insgesamt etwa 8 Jahre Berufserfahrung gesammelt. Um meine Leidenschaft zum Beruf zu machen, habe ich im August 2022 den Intensivkurs an der Developer Academy absolviert.`);
+    this.getElById('trans8', `Hallo, ich bin ein Frontend-Entwickler aus Köln. Nach der Schule habe ich eine Ausbildung im IT-Bereich absolviert und insgesamt etwa 9 Jahre Berufserfahrung gesammelt. Um meine Leidenschaft zum Beruf zu machen, habe ich im August 2022 den Intensivkurs an der Developer Academy absolviert.`);
     this.getElById('trans9', `Zur Schulzeit habe ich meine ersten Erfahrungen gemacht und war bereits an verschiedenen Arten von Soft- und Hardware interessiert.`);
     this.getElById('trans10', `Mit 15 Jahren programmierte ich meine erste Homepage basierend auf HTML/CSS, die wie ein soziales Medienprofil aufgebaut war.`);
     this.getElById('trans11-1', `Skills`);
     this.getElById('trans11', `Ich habe Erfahrung in Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.`);
     this.getElById('trans12', `In Kontakt treten`);
-    this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Hier ist ein Teil meiner Arbeit anzusehen.`);
+    this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Hier ist ein Teil meiner Projekte anzusehen.`);
     this.getElById('trans14', `Das Index der Pokemon! Das auf API basierte Pokedex mit erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
-    this.getElById('trans16', `El Pollo Loco ist ein humorvolles Jump-and-Run Spiel, das mit objektorientiertem JavaScript erstellt wurde.`);
-    this.getElById('trans17', `Team Table ist ein Tool, mit dem du deine Arbeit organisieren und effizienter gestalten kannst, ähnlich einem Kanban-Board.`);
+    this.getElById('trans16', `El Pollo Loco ist ein humorvolles Jump-and-Run Spiel, das mit objekt rientiertem JavaScript erstellt wurde.`);
+    this.getElById('trans17', `Team Table ist ein Tool, mit dem Du Deine Arbeit organisieren und effizienter gestalten kannst, ähnlich einem Kanban-Board.`);
     this.getElById('trans18', `Das beliebte Kartenspiel in einem Online-Desktop-Format, welches mehreren Benutzern ermöglicht, gleichzeitig auf verschiedenen Geräten zu spielen.`);
     this.getElById('trans19', `Live-Test`);
     this.getElById('trans20', `Live-Test`);
@@ -174,11 +162,6 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans3', `Portfolio`);
     this.getElById('trans2', `Skills`);
     this.getElById('trans4-1', `I am`);
-    // const englishStyle1 = document.getElementById('trans4-1');
-    // if (englishStyle1) {
-    //   englishStyle1.innerHTML = `I am`;
-    //   englishStyle1.style.setProperty('font-size', '90px');
-    // }
     this.getElById('trans4-2', `FRONTEND DEVELOPER`);
     this.getElById('trans5', `Let's talk!`);
     this.getElById('trans6', `Scroll down`);
@@ -237,11 +220,6 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans3', `Portföy`);
     this.getElById('trans2', `Beceriler`);
     this.getElById('trans4-1', `ben`);
-    // const turkishStyle1 = document.getElementById('trans4-1');
-    // if (turkishStyle1) {
-    //   turkishStyle1.innerHTML = `ben`;
-    //   turkishStyle1.style.setProperty('font-size', '90px');
-    // }
     this.getElById('trans4-2', `FRONTEND DEVELOPER`);
     this.getElById('trans5', `Konuşalım!`);
     this.getElById('trans6', `Aşağı kaydır`);
@@ -293,7 +271,4 @@ export class AHeaderNavbarComponent implements OnInit {
     this.openAndCloseNavbar();
     document.documentElement.style.setProperty('overflow-y', 'auto');
   }
-
 }
-
-
