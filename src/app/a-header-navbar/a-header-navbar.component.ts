@@ -126,9 +126,9 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans9', `Zur Schulzeit habe ich meine ersten Erfahrungen gemacht und war bereits an verschiedenen Arten von Soft- und Hardware interessiert.`);
     this.getElById('trans10', `Mit 15 Jahren programmierte ich meine erste Homepage basierend auf HTML/CSS, die wie ein soziales Medienprofil aufgebaut war.`);
     this.getElById('trans11-1', `Skills`);
-    this.getElById('trans11', `Meine Erfahrungen:`);
+    this.getElById('trans11', `Meine Erfahrungen`);
     this.getElById('trans12', `In Kontakt treten`);
-    this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Scrollen Sie nach unten um meine Projekte anzusehen.`);
+    this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Hier ist ein Teil meiner Arbeit anzusehen.`);
     this.getElById('trans14', `Das Index der Pokemon! Das auf API basierte Pokedex, mit erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
     this.getElById('trans16', `El Pollo Loco ist ein humorvolles Jump-and-Run-Spiel, das mit objektorientiertem JavaScript erstellt wurde.`);
     this.getElById('trans17', `Team Table ist ein Tool, mit dem Sie Ihre Arbeit organisieren und effizienter gestalten können, ähnlich einem Kanban-Board.`);
@@ -139,11 +139,11 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans22', `Live-Test`);
     this.getElById('trans23', `Portfolio`);
     this.getElById('trans24', `Willst du ein Problem lösen?`);
-    this.getElById('trans25', `Kontaktieren Sie mich über dieses Formular, ich möchte Ihnen mit meiner Arbeit, zu Ihren Projekten beitragen.
+    this.getElById('trans25', `Kontaktiere mich über dieses Formular, ich möchte Dir mit meiner Arbeit, zu deinen Projekten beitragen.
     <br><br>
-    Brauchen Sie einen Frontend-Entwickler? <a href="mailto:yener.bas@outlook.de"         style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;" 
+    Brauchst du einen Frontend-Entwickler? <a href="mailto:yener.bas@outlook.de"         style="text-decoration: none; color: white; font-weight: bold; cursor: pointer;" 
     onpointerenter="this.setAttribute('style', 'color: blue; color: #e86f00; text-decoration: none; font-weight: bold;')" 
-    onpointerleave="this.setAttribute('style', 'color: red; color: white; text-decoration: none; font-weight: bold;')">Kontaktieren Sie mich!</a>`);
+    onpointerleave="this.setAttribute('style', 'color: red; color: white; text-decoration: none; font-weight: bold;')">Kontaktiere mich!</a>`);
     const placeholderName = document.getElementById('name');
     if (placeholderName) {
       placeholderName.setAttribute('placeholder', 'Dein Name');
