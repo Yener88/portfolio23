@@ -160,7 +160,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans27', `Impressum`);
     this.getElById('trans28', `Senden :)`);
     this.getElById('trans29', `Yener Bas`);
-    this.getElById('trans29-1', `Yener Bas`);
+    this.getElById('trans29-1', `Yener Bas 2023`);
     this.getElById('trans30', `Über mich`);
     this.getElById('trans31', `Skills`);
     this.getElById('trans32', `Portfolio`);
@@ -190,7 +190,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans11', `I have gained experience in building projects with various frontend technologies and concepts.`);
     this.getElById('trans12', `Get in touch`);
     this.getElById('trans13', `This page is a sample of my work! Please fell free to try them.`);
-    this.getElById('trans14', `Index of Pokemon, API based Pokedex! With extensive details and advanced functions such as finding, favorite and managing all Pokemon in the search.`);
+    this.getElById('trans14', `Index of Pokemon, API based Pokedex! With extensive details and advanced functions such as finding, favoring and managing all Pokemon in the search.`);
     this.getElById('trans16', `El Pollo Loco is a humorous jump-and-run game created using object-oriented JavaScript and serving as an introduction to Angular development.`);
     this.getElById('trans17', `Team Table is a tool used to organize and improve the efficiency of your work, similar
         to a Kanban Board.`);
@@ -223,7 +223,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans27', `Imprint`);
     this.getElById('trans28', `Send :)`);
     this.getElById('trans29', `Yener Bas`);
-    this.getElById('trans29-1', `Yener Bas`);
+    this.getElById('trans29-1', `Yener Bas 2023`);
     this.getElById('trans30', `About me`);
     this.getElById('trans31', `Skills`);
     this.getElById('trans32', `Portfolio`);
@@ -285,7 +285,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans27', `Künye`);
     this.getElById('trans28', `Gönder :)`);
     this.getElById('trans29', `Yener Baş`);
-    this.getElById('trans29-1', `Yener Baş`);
+    this.getElById('trans29-1', `Yener Baş 2023`);
     this.getElById('trans30', `Hakkimda`);
     this.getElById('trans31', `Beceriler`);
     this.getElById('trans32', `Portföy`);
