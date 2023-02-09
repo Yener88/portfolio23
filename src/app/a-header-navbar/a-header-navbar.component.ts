@@ -189,7 +189,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans11-1', `Skills`);
     this.getElById('trans11', `I have gained experience in building projects with various frontend technologies and concepts.`);
     this.getElById('trans12', `Get in touch`);
-    this.getElById('trans13', `This page is a sample of my work! Scroll down to view other projects i have developed.`);
+    this.getElById('trans13', `This page is a sample of my work! Please fell free to try them.`);
     this.getElById('trans14', `Index of Pokemon, API based Pokedex! With extensive details and advanced functions such as finding, favorite and managing all Pokemon in the search.`);
     this.getElById('trans16', `El Pollo Loco is a humorous jump-and-run game created using object-oriented JavaScript and serving as an introduction to Angular development.`);
     this.getElById('trans17', `Team Table is a tool used to organize and improve the efficiency of your work, similar
