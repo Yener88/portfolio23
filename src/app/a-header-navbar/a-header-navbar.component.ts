@@ -126,7 +126,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans9', `Zur Schulzeit habe ich meine ersten Erfahrungen gemacht und war bereits an verschiedenen Arten von Soft- und Hardware interessiert.`);
     this.getElById('trans10', `Mit 15 Jahren programmierte ich meine erste Homepage basierend auf HTML/CSS, die wie ein soziales Medienprofil aufgebaut war.`);
     this.getElById('trans11-1', `Skills`);
-    this.getElById('trans11', `Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.`);
+    this.getElById('trans11', `Meine Erfahrungen:`);
     this.getElById('trans12', `In Kontakt treten`);
     this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Scrollen Sie nach unten um meine Projekte anzusehen.`);
     this.getElById('trans14', `Das Index der Pokemon! Das auf API basierte Pokedex, mit erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
