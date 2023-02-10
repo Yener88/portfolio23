@@ -224,7 +224,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans5', `Konuşalım!`);
     this.getElById('trans6', `Aşağı kaydır`);
     this.getElById('trans7', `Hakkımda`);
-    this.getElById('trans8', `Merhaba, ben Köln Almanya'da yerleşik bir Frontend geliştiriciyim. Okuldan sonra, IT alanında bir eğitim aldım ve toplamda yaklaşık 8 yıl profesyonel deneyim kazandım. Tutkumu meslek haline getirmek için, Ağustos 2022'de Developer Academy'de Frontend kursu tamamladım.`);
+    this.getElById('trans8', `Merhaba, ben Köln Almanya'da yerleşik bir Frontend geliştiriciyim. Okuldan sonra, IT alanında bir eğitim aldım ve toplamda yaklaşık 8 yıl profesyonel deneyim kazandım. Tutkumu meslek haline getirmek için, Ağustos 2022'de Developer Academy'de Frontend kursunu tamamladım.`);
     this.getElById('trans9', `Okul sırasında, ilk deneyimlerimi yaptım ve farklı türlerdeki elektronik cihazlarını çok ilgi duyuyordum.`);
     this.getElById('trans10', `15 yaşında, HTML/CSS temelinde kendi hakkında bir sosyal medya profili inşa ettim ve böylece ilk web sayfamı programladım.`);
     this.getElById('trans11-1', `Skills`);
