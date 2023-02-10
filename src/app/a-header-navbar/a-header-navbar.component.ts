@@ -118,7 +118,7 @@ export class AHeaderNavbarComponent implements OnInit {
     this.getElById('trans12', `In Kontakt treten`);
     this.getElById('trans13', `Diese Seite ist eine Beispiel meiner Arbeit! Hier ist ein Teil meiner Projekte anzusehen.`);
     this.getElById('trans14', `Das Index der Pokemon! Das auf API basierte Pokedex mit erweiterten Funktionen wie in der Suche alle Pokemon zu finden, zu favorisieren und zu verwalten.`);
-    this.getElById('trans16', `El Pollo Loco ist ein humorvolles Jump-and-Run Spiel, das mit objekt rientiertem JavaScript erstellt wurde.`);
+    this.getElById('trans16', `El Pollo Loco ist ein humorvolles Jump-and-Run Spiel, das mit objektorientiertem JavaScript erstellt wurde.`);
     this.getElById('trans17', `Team Table ist ein Tool, mit dem Du Deine Arbeit organisieren und effizienter gestalten kannst, ähnlich einem Kanban-Board.`);
     this.getElById('trans18', `Das beliebte Kartenspiel in einem Online-Desktop-Format, welches mehreren Benutzern ermöglicht, gleichzeitig auf verschiedenen Geräten zu spielen.`);
     this.getElById('trans19', `Live-Test`);
@@ -217,29 +217,29 @@ export class AHeaderNavbarComponent implements OnInit {
 
   clickLanguageTR() {
     this.getElById('trans1', `Hakkimda`);
-    this.getElById('trans3', `Portföy`);
-    this.getElById('trans2', `Beceriler`);
+    this.getElById('trans3', `Portfolyo`);
+    this.getElById('trans2', `Skills`);
     this.getElById('trans4-1', `ben`);
     this.getElById('trans4-2', `FRONTEND DEVELOPER`);
     this.getElById('trans5', `Konuşalım!`);
     this.getElById('trans6', `Aşağı kaydır`);
     this.getElById('trans7', `Hakkımda`);
-    this.getElById('trans8', `Merhaba, Köln, Almanya'da yerleşik bir Frontend geliştiriciyim. Okuldan sonra, IT alanında bir eğitim aldım ve toplamda yaklaşık 8 yıl profesyonel deneyim kazandım. Tutkumu meslek haline getirmek için, Ağustos 2022'de Developer Academy'de yoğun bir kursu tamamladım.`);
-    this.getElById('trans9', `Okul sırasında, ilk deneyimlerimi yaptım ve farklı türlerdeki elektronik cihazların yazılımı ve donanımına çok ilgi duyuyordum.`);
-    this.getElById('trans10', `15 yaşında, HTML/CSS temelinde kendim hakkında bir sosyal medya profili gibi inşa edilmiş ilk web sayfamı programladım.`);
-    this.getElById('trans11-1', `Beceriler`);
+    this.getElById('trans8', `Merhaba, ben Köln Almanya'da yerleşik bir Frontend geliştiriciyim. Okuldan sonra, IT alanında bir eğitim aldım ve toplamda yaklaşık 8 yıl profesyonel deneyim kazandım. Tutkumu meslek haline getirmek için, Ağustos 2022'de Developer Academy'de Frontend kursu tamamladım.`);
+    this.getElById('trans9', `Okul sırasında, ilk deneyimlerimi yaptım ve farklı türlerdeki elektronik cihazlarını çok ilgi duyuyordum.`);
+    this.getElById('trans10', `15 yaşında, HTML/CSS temelinde kendi hakkında bir sosyal medya profili inşa ettim ve böylece ilk web sayfamı programladım.`);
+    this.getElById('trans11-1', `Skills`);
     this.getElById('trans11', `Çeşitli frontend teknolojileri ve kavramları ile projelerin inşa etmekte deneyim kazandım.`);
     this.getElById('trans12', `İletişim kurmak`);
     this.getElById('trans13', `Bu sayfa işlerimin bir örneğidir! Diğer geliştirdiğim projeleri görmek için aşağı kaydırın.`);
-    this.getElById('trans14', `Pokemon Endeksi, API tabanlı Pokedex! Aramada tüm Pokemon'u bulma, favorilere ekleme ve yönetme gibi kapsamlı ayrıntılar ve gelişmiş işlevlerle.`);
-    this.getElById('trans16', `El Pollo Loco, nesne yönelimli JavaScript kullanılarak oluşturulan ve Angular geliştirmeye giriş işlevi gören komik bir zıpla ve koş oyunudur.`);
+    this.getElById('trans14', `Pokemon Endeksi, API tabanlı Pokedex! Aramada tüm Pokemon'u bulma, favorilere ekleme ve yönetme gibi kapsamlı ayrıntılar.`);
+    this.getElById('trans16', `El Pollo Loco, JavaScript kullanılarak oluşturulan ve Angular geliştirmeye giriş gören komik bir zıpla ve koş oyunudur.`);
     this.getElById('trans17', `Team Table, işinizi organize etmeniz ve verimliliğinizi arttırmak için kullanabileceğiniz bir araçtır, Kanban Board benzeri.`);
-    this.getElById('trans18', `Çevrimiçi, masaüstü biçiminde sunulan ve birden çok kullanıcının aynı anda çeşitli cihazlarda oynamasına olanak tanıyan popüler kart oyunu.`);
+    this.getElById('trans18', `Masaüstü biçiminde sunulan ve birden çok kullanıcının aynı anda çeşitli cihazlarda oynamasına olanak tanıyan popüler kart oyunu.`);
     this.getElById('trans19', `Canlı test`);
     this.getElById('trans20', `Canlı test`);
     this.getElById('trans21', `Canlı test`);
     this.getElById('trans22', `Canlı test`);
-    this.getElById('trans23', `Portföy`);
+    this.getElById('trans23', `Portfolyo`);
     this.getElById('trans24', `Çözülecek bir sorunun var mı?`);
     this.getElById('trans25', `Bu form aracılığıyla bana ulaşın, fikirlerinizi duymak, bilmek ve projelerinize çalışmam ile katkıda bulunmak ilgileniyorum.
         <br><br>
