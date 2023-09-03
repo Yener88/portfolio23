@@ -3,7 +3,7 @@
         <div class="footerPos1" data-aos="fade-right" data-aos-duration="2000">
             <img src="assets/img/logowhite.png" onClick="location.reload()" alt="own made Logo">
             <div (click)="openPolicy()" class="footerLink">
-                <span id="trans27">
+                <span id="trans27" class="clickNavbarIgnore">
                     Imprint
                 </span>
             </div>
@@ -15,18 +15,18 @@
         </div>
         <div class="footerPos2" data-aos="fade-up" data-aos-duration="2000">
             <a href="https://www.linkedin.com/in/yener-bas/" target="_blank">
-                <img src="assets/img/footer_1.png" alt="logo footer 1">
+                <img src="assets/img/footer_1.png"  class="clickNavbarIgnore" alt="logo footer 1">
             </a>
             <a href="https://github.com/Yener88" target="_blank">
-                <img src="assets/img/footer_2.png" alt="logo footer 2">
+                <img src="assets/img/footer_2.png"  class="clickNavbarIgnore" alt="logo footer 2">
             </a>
             <a href="https://www.xing.com/profile/Yener_Bas/cv" target="_blank">
-                <img src="assets/img/footer_3.png" alt="logo footer 3">
+                <img src="assets/img/footer_3.png"  class="clickNavbarIgnore" alt="logo footer 3">
             </a>
         </div>
     </div>
-    <div id="policy" class="d-none clickNavbarIgnore">
-        <button (click)="closePolicy()">x</button>
+    <div id="policy" class="d-none">
+        <button (click)="closePolicy()" class="clickNavbarIgnore">x</button>
         <div class="policyInnerPosition">
             <div class="policyInnerStyle">
                 <h1 id="trans26">Imprint</h1> <br>

@@ -10,8 +10,9 @@ export class FFooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+
   }
+
   openPolicy() {
     const policy = document.getElementById('policy');
     if (policy) {
@@ -28,4 +29,5 @@ export class FFooterComponent implements OnInit {
       document.documentElement.style.setProperty('overflow-y', 'auto');
     }
   }
+
 }

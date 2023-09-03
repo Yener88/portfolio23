@@ -1,5 +1,5 @@
 <div class="navbar">
-    <div class="navbarContent" id="navbarHide">
+    <div class="navbarContent clickNavbarIgnore" id="navbarHide">
         <!-- ########## DESKTOP NAVBAR ########## -->
         <div class="navbarLogoSection" data-aos="zoom-in-right" data-aos-duration="1500">
             <a href="#" class="navbarLogoMain">
@@ -7,7 +7,7 @@
                     onClick="location.reload()" alt="own made Logo">
             </a>
             <div class="hideMobile">
-                <img class="languagebtn" (click)="openAndCloseLanguage()" src="assets/img/languagebtn.png"
+                <img class="languagebtn clickNavbarIgnore" (click)="openAndCloseLanguage()" src="assets/img/languagebtn.png"
                     alt="language Icon">
             </div>
             <div class="hideMobile">
@@ -23,17 +23,17 @@
             </div>
         </div>
         <div class="navbarLinks hideMobile" data-aos="zoom-in-left" data-aos-duration="1500">
-            <a href="#aboutme">
+            <a href="#aboutme" class="checkNavbarUp">
                 <span id="trans1">
                     About me
                 </span>
             </a>
-            <a href="#skills">
-                <span id="trans2">
+            <a href="#skills" class="checkNavbarUp">
+                <span id="trans2"> 
                     Skills
                 </span>
             </a>
-            <a href="#projects">
+            <a href="#projects" class="checkNavbarUp">
                 <span id="trans3">
                     Portfolio
                 </span>
@@ -45,16 +45,16 @@
         </div>
         <div id="mobileNavbarContent" class="d-none hideDesktop">
             <div class="mobileNavbarInnerPosition">
-                <a id="trans30" (click)="openAndCloseNavbar()" href="#aboutme">
+                <a id="trans30" (click)="openAndCloseNavbar()" href="#aboutme" class="checkNavbarUp">
                     About me
                 </a><br>
-                <a id="trans31" (click)="openAndCloseNavbar()" href="#skills">
+                <a id="trans31" (click)="openAndCloseNavbar()" href="#skills" class="checkNavbarUp">
                     Skills
                 </a><br>
-                <a id="trans32" (click)="openAndCloseNavbar()" href="#projects">
+                <a id="trans32" (click)="openAndCloseNavbar()" href="#projects" class="checkNavbarUp">
                     Portfolio
                 </a><br>
-                <a id="trans33" (click)="openAndCloseNavbar()" href="#contact">
+                <a id="trans33" (click)="openAndCloseNavbar()" href="#contact" class="checkNavbarUp">
                     Contact
                 </a>
                 <div id="transBtnPosition1">

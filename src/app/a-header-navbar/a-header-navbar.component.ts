@@ -10,25 +10,34 @@ export class AHeaderNavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // beim runter Scrollen fährt die navbar ein und komm wieder beim hochscrollen 
+    // Beim Runter- und Hochscrollen fährt die Navbar ein
     const navbar = document.getElementById("navbarHide");
     if (navbar) {
       var lastScroll = 0;
-      const navbarHeight = window.getComputedStyle(navbar, null).getPropertyValue("height");
+      var isNavbarOpen = true; // Hält den Status der Navbar (geöffnet oder eingefahren)
+
       window.onscroll = function () {
         const currentScroll = window.pageYOffset;
         if (currentScroll > lastScroll) {
-          navbar.style.top = `-${navbarHeight}`;
-          navbar.style.boxShadow = "none";
+          // Wenn nach unten gescrollt wird (Scroll-Richtung ist nach unten)
+          if (isNavbarOpen) {
+            navbar.style.top = `-${getNavbarHeight()}px`;
+            navbar.style.boxShadow = "none";
+            isNavbarOpen = false;
+          }
         } else {
-          navbar.style.top = "0";
-          navbar.style.boxShadow = "0px 4px 4px rgba(0, 0, 0, 0.25)";
+          // Wenn nach oben gescrollt wird (Scroll-Richtung ist nach oben)
+          if (!isNavbarOpen) {
+            navbar.style.top = "0";
+            navbar.style.boxShadow = "0px 4px 4px rgba(0, 0, 0, 0.25)";
+            isNavbarOpen = true;
+          }
         }
         lastScroll = currentScroll;
       };
     }
 
-    // Klick öffnet navbar       clickNavbarIgnore MUSS NOCH VERGEBEN WERDEN
+    // Klick öffnet Navbar und fährt sie ein
     document.body.addEventListener("click", function (event) {
       let target = event.target as HTMLElement;
       if (target.classList.contains("clickNavbarIgnore")) {
@@ -36,9 +45,48 @@ export class AHeaderNavbarComponent implements OnInit {
         return;
       }
       if (navbar) {
-        navbar.style.top = "0";
-        navbar.style.boxShadow = ('0px 4px 4px rgba(0, 0, 0, 0.25)');
+        if (isNavbarOpen) {
+          navbar.style.top = `-${getNavbarHeight()}px`;
+          navbar.style.boxShadow = "none";
+          isNavbarOpen = false;
+        } else {
+          navbar.style.top = "0";
+          navbar.style.boxShadow = "0px 4px 4px rgba(0, 0, 0, 0.25)";
+          isNavbarOpen = true;
+        }
       }
+    });
+
+
+    // Funktion zur Berechnung der Navbar-Höhe
+    function getNavbarHeight() {
+      const navbar = document.getElementById("navbarHide");
+      if (navbar) {
+        return navbar.offsetHeight;
+      }
+      return 0; // Standardwert, wenn das Element nicht gefunden wird
+    }
+
+    // Fügen Sie diese Funktion hinzu, um die Navbar zu überprüfen und zu schließen
+    function checkAndCloseNavbar() {
+      const navbar = document.getElementById("navbarHide");
+      if (navbar) {
+        if (isNavbarOpen = true) {
+          navbar.style.top = `-${getNavbarHeight()}px`;
+          navbar.style.boxShadow = "none";
+          isNavbarOpen = false;
+        }
+      }
+    }
+
+    // Rufen Sie checkAndCloseNavbar nach einem kurzen Timer auf
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbarLinks = document.querySelectorAll(".checkNavbarUp");
+      navbarLinks.forEach(function (href) {
+        href.addEventListener("click", function () {
+          setTimeout(checkAndCloseNavbar, 1600); // Hier können Sie die Verzögerungszeit nach Bedarf anpassen (in Millisekunden)
+        });
+      });
     });
   }
 
