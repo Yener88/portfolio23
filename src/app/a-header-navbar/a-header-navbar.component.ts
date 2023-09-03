@@ -84,7 +84,7 @@ export class AHeaderNavbarComponent implements OnInit {
       const navbarLinks = document.querySelectorAll(".checkNavbarUp");
       navbarLinks.forEach(function (href) {
         href.addEventListener("click", function () {
-          setTimeout(checkAndCloseNavbar, 1600); // Hier können Sie die Verzögerungszeit nach Bedarf anpassen (in Millisekunden)
+          setTimeout(checkAndCloseNavbar, 1400); // Hier können Sie die Verzögerungszeit nach Bedarf anpassen (in Millisekunden)
         });
       });
     });
