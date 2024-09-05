@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,8 @@ import { DProjectsComponent } from './d-projects/d-projects.component';
 import { EContactComponent } from './e-contact/e-contact.component';
 import { FFooterComponent } from './f-footer/f-footer.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +24,14 @@ import { FFooterComponent } from './f-footer/f-footer.component';
     CSkillsComponent,
     DProjectsComponent,
     EContactComponent,
-    FFooterComponent
+    FFooterComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
