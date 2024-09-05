@@ -3,6 +3,9 @@
         <div class="contactContentLeft"></div>
         <div class="contactContentRight" data-aos="flip-left" data-aos-duration="3000">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <div *ngIf="successMessage" class="alert alert-info">
+                    {{ successMessage }}
+                </div>
                 <input [(ngModel)]="contactData.name" class="clickNavbarIgnore" autocomplete="off" type="text" id="name"
                     name="name" minlength="3" maxlength="40" placeholder="Your name" required
                     pattern="[a-zA-Z ']*"><br><br>
@@ -15,9 +18,6 @@
                         Send :)
                     </span>
                 </button>
-                <div *ngIf="successMessage" class="alert alert-info">
-                    {{ successMessage }}
-                </div>
             </form>
         </div>
     </div>
