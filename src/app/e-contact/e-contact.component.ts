@@ -60,9 +60,7 @@ export class EContactComponent implements OnInit {
       window.visualViewport.addEventListener('resize', () => {
         const focusedElement = document.activeElement as HTMLElement;
         if (focusedElement) {
-          setTimeout(() => {
             focusedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }, 100);
         }
       });
     }
