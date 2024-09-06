@@ -194,7 +194,7 @@ export class AHeaderNavbarComponent implements OnInit {
     }
     this.getElById('trans26', `Kontakt`);
     this.getElById('trans27', `Impressum`);
-    this.getElById('trans28', `Senden :)`);
+    this.getElById('trans28', `Senden`);
     this.getElById('trans29', `Yener Bas`);
     this.getElById('trans29-1', `Yener Bas 2023`);
     this.getElById('trans30', `Über mich`);
@@ -252,7 +252,7 @@ export class AHeaderNavbarComponent implements OnInit {
     }
     this.getElById('trans26', `Contact`);
     this.getElById('trans27', `Imprint`);
-    this.getElById('trans28', `Send :)`);
+    this.getElById('trans28', `Send`);
     this.getElById('trans29', `Yener Bas`);
     this.getElById('trans29-1', `Yener Bas 2023`);
     this.getElById('trans30', `About me`);
@@ -309,7 +309,7 @@ export class AHeaderNavbarComponent implements OnInit {
     }
     this.getElById('trans26', `İletişim`);
     this.getElById('trans27', `Künye`);
-    this.getElById('trans28', `Gönder :)`);
+    this.getElById('trans28', `Gönder`);
     this.getElById('trans29', `Yener Baş`);
     this.getElById('trans29-1', `Yener Baş 2023`);
     this.getElById('trans30', `Hakkimda`);

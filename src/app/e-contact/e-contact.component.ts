@@ -7,9 +7,14 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './e-contact.component.html',
   styleUrls: ['./e-contact.component.scss']
 })
+
 export class EContactComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
+
+  ngOnInit(): void {
+    this.adjustViewportHeight();
+  }
 
   contactData = {
     name: "",
@@ -29,23 +34,19 @@ export class EContactComponent implements OnInit {
     },
   };
 
-  successMessage: string | null = null; // Variable für Erfolgsnachricht
-
-  ngOnInit(): void {
-    this.preventScrollOnKeyboard(); // Aufruf der Funktion zum Verhindern des Scrollens
-  }
+  successMessage: string | null = null;
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
         .subscribe({
           next: (response) => {
-            this.successMessage = 'Ihre Nachricht wurde erfolgreich gesendet!'; // Setze Erfolgsnachricht
+            this.successMessage = 'Ihre Nachricht wurde erfolgreich gesendet!';
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
-            this.successMessage = 'Es gab ein Problem beim Senden Ihrer Nachricht.'; // Fehlernachricht
+            this.successMessage = 'Es gab ein Problem beim Senden Ihrer Nachricht.';
           },
           complete: () => console.info('send post complete'),
         });
@@ -54,24 +55,19 @@ export class EContactComponent implements OnInit {
       ngForm.resetForm();
     }
   }
-
-  // Funktion zum Verhindern des Layout-Verschiebens beim Öffnen der mobilen Tastatur
-  preventScrollOnKeyboard(): void {
-    let initialHeight = window.innerHeight;
-
-    window.addEventListener('resize', () => {
-      const currentHeight = window.innerHeight;
-
-      // Wenn die Höhe des Viewports geringer ist, bedeutet dies, dass die Tastatur angezeigt wird
-      if (currentHeight < initialHeight) {
-        document.body.style.position = 'fixed';
-        document.body.style.width = '100%';
-        document.body.style.overflow = 'hidden'; // verhindert das Scrollen
-      } else {
-        // Wenn die Tastatur wieder ausgeblendet wird, entferne den fixierten Zustand
-        document.body.style.position = '';
-        document.body.style.overflow = '';
-      }
-    });
+  adjustViewportHeight(): void {
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', () => {
+        const focusedElement = document.activeElement as HTMLElement;
+        if (focusedElement) {
+          setTimeout(() => {
+            focusedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 100);
+        }
+      });
+    }
   }
+  
+
+
 }
