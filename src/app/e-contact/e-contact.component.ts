@@ -11,9 +11,6 @@ export class EContactComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
 
-  ngOnInit(): void {
-  }
-
   contactData = {
     name: "",
     email: "",
@@ -27,12 +24,16 @@ export class EContactComponent implements OnInit {
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
-        'Content-Type': 'application/json', // Ändere dies zu application/json
+        'Content-Type': 'application/json',
       },
     },
   };
 
   successMessage: string | null = null; // Variable für Erfolgsnachricht
+
+  ngOnInit(): void {
+    this.preventScrollOnKeyboard(); // Aufruf der Funktion zum Verhindern des Scrollens
+  }
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
@@ -52,5 +53,25 @@ export class EContactComponent implements OnInit {
       this.successMessage = 'Testmodus aktiviert, Formular wurde zurückgesetzt.';
       ngForm.resetForm();
     }
+  }
+
+  // Funktion zum Verhindern des Layout-Verschiebens beim Öffnen der mobilen Tastatur
+  preventScrollOnKeyboard(): void {
+    let initialHeight = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      const currentHeight = window.innerHeight;
+
+      // Wenn die Höhe des Viewports geringer ist, bedeutet dies, dass die Tastatur angezeigt wird
+      if (currentHeight < initialHeight) {
+        document.body.style.position = 'fixed';
+        document.body.style.width = '100%';
+        document.body.style.overflow = 'hidden'; // verhindert das Scrollen
+      } else {
+        // Wenn die Tastatur wieder ausgeblendet wird, entferne den fixierten Zustand
+        document.body.style.position = '';
+        document.body.style.overflow = '';
+      }
+    });
   }
 }
