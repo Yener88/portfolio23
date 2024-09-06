@@ -55,17 +55,39 @@ export class EContactComponent implements OnInit {
       ngForm.resetForm();
     }
   }
+
+
   adjustViewportHeight(): void {
-    if (window.visualViewport) {
-      window.visualViewport.addEventListener('resize', () => {
-        const focusedElement = document.activeElement as HTMLElement;
-        if (focusedElement) {
-            focusedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    window.addEventListener('resize', () => {
+      const contactForm = document.querySelector('form') as HTMLFormElement;
+      const focusedElement = document.activeElement as HTMLElement;
+      const contactTitle = document.querySelector('.contactBorderTitle') as HTMLElement;
+      const contactText = document.querySelector('.contactBorderText') as HTMLElement;
+
+      if (contactForm && (focusedElement === contactForm.querySelector('input') || focusedElement === contactForm.querySelector('textarea'))) {
+        focusedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        const viewportWidth = window.innerWidth;
+
+        if (viewportWidth <= 370) {
+          contactTitle.style.bottom = '-3315px';
+          contactText.style.bottom = '-3560px';
+        } else if (viewportWidth <= 1100) {
+          contactTitle.style.bottom = '-3453px';
+          contactText.style.bottom = '-3670px';
         }
-      });
-    }
+
+        contactTitle.style.position = 'absolute';
+        contactText.style.position = 'absolute';
+      }
+    });
   }
-  
+
+
+
+
+
+
 
 
 }

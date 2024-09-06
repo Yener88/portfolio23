@@ -3,16 +3,16 @@
         <div class="contactContentLeft"></div>
         <div class="contactContentRight" data-aos="flip-left" data-aos-duration="500">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <div *ngIf="successMessage" class="alert alert-info">
-                    {{ successMessage }}
-                </div>
                 <input [(ngModel)]="contactData.name" class="clickNavbarIgnore" autocomplete="off" type="text" id="name"
                     name="name" minlength="3" maxlength="40" placeholder="Your name" required
                     pattern="[a-zA-Z ']*"><br><br>
                 <input [(ngModel)]="contactData.email" class="clickNavbarIgnore" autocomplete="off" id="email"
                     name="email" type="email" placeholder="Your E-mail address" required><br><br>
                 <textarea [(ngModel)]="contactData.message" class="clickNavbarIgnore" name="message" id="message"
-                    minlength="20" maxlength="2000" placeholder="Your message" required></textarea><br><br>
+                    minlength="20" maxlength="1500" placeholder="Your message" required></textarea><br><br>
+                <div *ngIf="successMessage" class="alert alert-info">
+                    {{ successMessage }}
+                </div>
                 <button class="submitbtn clickNavbarIgnore" type="submit" required>
                     <span id="trans28" class="clickNavbarIgnore">
                         Send
@@ -47,7 +47,7 @@
                     <br><br>
                     Need a Frontend developer?
                     <a href="mailto:yener.bas@outlook.de"
-                        style="text-decoration: none; color: white; font-weight: bold; cursor: pointer !important;">Contact
+                        style="text-decoration: none; color: #e86f00; font-weight: bold; cursor: pointer !important;">Contact
                         me!</a>
                 </span>
             </div>
